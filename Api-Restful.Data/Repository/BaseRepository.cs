@@ -1,5 +1,5 @@
 using System;
-using System.Collections;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Api_Restful.Data.Context;
 using Api_Restful.Domain.Entities;
@@ -64,7 +64,7 @@ namespace Api_Restful.Data.Repository
             return await _dataset.AnyAsync(x => x.Id.Equals(id));
         }
 
-        public async Task<IEnumerable> SelectAllAsync()
+        public async Task<IEnumerable<T>> SelectAllAsync()
         {
             try
             {

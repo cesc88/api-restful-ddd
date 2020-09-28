@@ -1,5 +1,5 @@
 using System;
-using System.Collections;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Api_Restful.Domain.Entities;
 
@@ -11,7 +11,7 @@ namespace Api_Restful.Domain.Interfaces
         Task<T> UpdateAsync(T entity);
         Task<bool> DeleteAsync(Guid id);
         Task<T> SelectAsync(Guid id);
-        Task<IEnumerable> SelectAllAsync();
+        Task<IEnumerable<T>> SelectAllAsync();
         Task<bool> ExistAsync(Guid id);
     }
 }
