@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "application", "Api-Restful.Application\application.csproj", "{4D5693A6-0CCD-4367-AB51-5DAE79A83C14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Api-Restful.Application\application.csproj", "{4D5693A6-0CCD-4367-AB51-5DAE79A83C14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Api-Restful.Domain\Domain.csproj", "{7BE1A227-7695-412F-AE3F-FA8317829E76}"
 EndProject

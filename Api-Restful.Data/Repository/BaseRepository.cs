@@ -68,7 +68,7 @@ namespace Api_Restful.Data.Repository
         {
             try
             {
-                return await _dataset.ToArrayAsync();
+                return await _dataset.ToListAsync();
             }
             catch (Exception e)
             {

@@ -1,8 +1,14 @@
-﻿using System;
+﻿using Api_Restful.Service.Services;
+using Domain.Interfaces.Services.User;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace CrossCutting
+namespace Api_Restful.DependencyInjection.CrossCutting
 {
-    public class Class1
+    public class ConfigureService
     {
+        public static void ConfigureDependeciesService(IServiceCollection serviceColletion)
+        {
+            serviceColletion.AddTransient<IUserService, UserService>();
+        }
     }
 }

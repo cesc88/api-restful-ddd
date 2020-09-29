@@ -5,9 +5,9 @@ using Api_Restful.Domain.Entities;
 using Api_Restful.Domain.Interfaces;
 using Domain.Interfaces.Services.User;
 
-namespace Service
+namespace Api_Restful.Service.Services
 {
-    public class UserService : IUser
+    public class UserService : IUserService
     {
 
         private readonly IRepository<UserEntity> _repository;

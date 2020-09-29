@@ -5,7 +5,7 @@ using Api_Restful.Domain.Entities;
 
 namespace Domain.Interfaces.Services.User
 {
-    public interface IUser
+    public interface IUserService
     {
         Task<UserEntity> Get(Guid id);
         Task<IEnumerable<UserEntity>> GetAll();
