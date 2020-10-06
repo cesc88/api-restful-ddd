@@ -15,4 +15,9 @@
     <ProjectReference Include="..\Api-Restful.Service\Service.csproj" />
     <ProjectReference Include="..\Api-Restful.CrossCutting\CrossCutting.csproj" />
   </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
 </Project>
