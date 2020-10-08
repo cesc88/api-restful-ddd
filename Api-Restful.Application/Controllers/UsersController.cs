@@ -6,7 +6,7 @@ using Domain.Interfaces.Services.User;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace application
+namespace application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
