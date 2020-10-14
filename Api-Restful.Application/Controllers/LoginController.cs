@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using Api_Restful.Domain.Entities;
+using Domain.Dtos;
 using Domain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,7 +13,7 @@ namespace application.Controllers
     public class LoginController : ControllerBase
     {
         [HttpPost]
-        public async Task<object> Login([FromBody] UserEntity user, [FromServices] ILoginService service)
+        public async Task<object> Login([FromBody] LoginDto user, [FromServices] ILoginService service)
         {
             if (!ModelState.IsValid)
             {

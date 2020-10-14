@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
-using Api_Restful.Domain.Entities;
+using Domain.Dtos;
 
 namespace Domain.Interfaces.Services
 {
     public interface ILoginService
     {
-        Task<object> FindByLogin(UserEntity user);
+        Task<object> FindByLogin(LoginDto user);
     }
 }
