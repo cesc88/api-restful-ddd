@@ -4,6 +4,7 @@ using Api_Restful.Domain.Interfaces;
 using Data.Implementations;
 using Domain.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CrossCutting.DependencyInjection
@@ -14,10 +15,8 @@ namespace CrossCutting.DependencyInjection
         {
             serviceCollection.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             serviceCollection.AddScoped<IUserRepository, UserImplementanion>();
-;
             serviceCollection.AddDbContext<MyContext>(
-                options => options.UseMySql("Server=localhost;Port=3306;Uid=root;Pwd=carlos36;Database=dbRestful")
-           );
+                options => options.UseMySql("Server=localhost;Port=3306;Uid=root;Pwd=carlos36;Database=dbRestful"));
         }
     }
 }

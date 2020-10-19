@@ -9,5 +9,10 @@
     <Folder Include="Interfaces\Services\User\" />
     <Folder Include="Repository\" />
     <Folder Include="Dtos\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
   </ItemGroup>
 </Project>
