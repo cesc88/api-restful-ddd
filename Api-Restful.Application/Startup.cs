@@ -81,6 +81,26 @@ namespace application
                         Email = "cesc_peace@hotmail.com"
                     }
                 });
+
+                x.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Description = "Acess Token",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey
+                });
+
+                x.AddSecurityRequirement(new OpenApiSecurityRequirement
+                { 
+                    {
+                    new OpenApiSecurityScheme {
+                        Reference = new OpenApiReference {
+                            Id = "Bearer",
+                            Type = ReferenceType.SecurityScheme
+                        }
+                    }, new List<string>()
+                }
+               });
             });
         }
 
