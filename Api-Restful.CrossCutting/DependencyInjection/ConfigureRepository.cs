@@ -16,7 +16,7 @@ namespace CrossCutting.DependencyInjection
             serviceCollection.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             serviceCollection.AddScoped<IUserRepository, UserImplementanion>();
             serviceCollection.AddDbContext<MyContext>(
-                options => options.UseMySql("Server=localhost;Port=3306;Uid=root;Pwd=carlos36;Database=dbRestful"));
+                options => options.UseMySql(""));
         }
     }
 }
